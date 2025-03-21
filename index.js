@@ -22,5 +22,5 @@ app.get('/usuarios', async (req, res) => {
         res.json(result.recordset);
 });
 
-
-   app.listen(3000, () => console.log('API en ejecución'));
+    const Port = process.env.PORT || 3000;
+   app.listen(Port, () => console.log('API en ejecución'));
